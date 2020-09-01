@@ -1,26 +1,26 @@
 {% set name = "nionswift-instrumentation" %}
-{% set version = "0.18.3" %}
+{% set version = "0.19.0" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: 332bc7b8b798d38a9afb2ebb5fbf0068e9084153cb60d458b28f735708f86096
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 1e20fb7bf1dff69a1f53e27e8abe61c0850fad06d4c7ebbe1722721de6b63134
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.7
   run:
-    - nionswift >=0.14.0
-    - python >=3.6
+    - nionswift >=0.15.0
+    - python >=3.7
 
 test:
   imports:
@@ -29,15 +29,15 @@ test:
     - nionswift_plugin.nion_instrumentation_ui
 
 about:
-  home: "https://nionswift-instrumentation.readthedocs.io"
-  license: GPLv3
+  home: https://nionswift-instrumentation.readthedocs.io
+  license: GPL-3.0-or-later
   license_family: GPL3
   license_file: LICENSE
-  summary: "A Nion Swift library for STEM instrumentation (Camera, Scan, Video, Microscope)."
+  summary: A Nion Swift library for STEM instrumentation (Camera, Scan, Video, Microscope).
   doc_url: https://nionswift-instrumentation.readthedocs.io
   dev_url: https://github.com/nion-software/nionswift-instrumentation-kit
 
 extra:
   recipe-maintainers:
     - cmeyer
-    - ericpre
+    - nion-gwyn

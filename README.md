@@ -5,7 +5,7 @@ Home: https://nionswift-instrumentation.readthedocs.io
 
 Package license: GPLv3
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: A Nion Swift library for STEM instrumentation (Camera, Scan, Video, Microscope).
 
