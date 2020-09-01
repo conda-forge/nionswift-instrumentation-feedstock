@@ -17,10 +17,10 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.7
   run:
-    - nionswift >=0.14.0
-    - python >=3.6
+    - nionswift >=0.15.0
+    - python >=3.7
 
 test:
   imports:
@@ -30,7 +30,7 @@ test:
 
 about:
   home: https://nionswift-instrumentation.readthedocs.io
-  license: GPLv3
+  license: GPL-3.0-or-later
   license_family: GPL3
   license_file: LICENSE
   summary: A Nion Swift library for STEM instrumentation (Camera, Scan, Video, Microscope).
@@ -40,4 +40,4 @@ about:
 extra:
   recipe-maintainers:
     - cmeyer
-    - ericpre
+    - nion-gwyn
