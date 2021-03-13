@@ -1,5 +1,5 @@
 {% set name = "nionswift-instrumentation" %}
-{% set version = "0.19.3" %}
+{% set version = "0.19.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: db3999c5a485df8b0928894221eebda2fc323b7c04e1d44664b8e5d79f9fd731
+  sha256: 2daa5ed996237f60209a1450eb711fa3df299cff54254b9b2a054a133885ffa3
 
 build:
   number: 0
@@ -19,7 +19,8 @@ requirements:
     - pip
     - python >=3.7
   run:
-    - nionswift >=0.15.3
+    - nionui >=0.5.0,<0.6.0
+    - nionswift >=0.15.5,<0.16.0
     - python >=3.7
 
 test:
