@@ -17,11 +17,14 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python >=3.8
   run:
-    - nionui >=0.5.0,<0.6.0
-    - nionswift >=0.15.5,<0.16.0
-    - python >=3.7
+    - niondata >=0.14.0,<0.15.0
+    - nionswift >=0.16.0,<0.17.0
+    - nionui >=0.6.0,<0.7.0
+    - nionutils >=0.4.1,<0.5.0
+    - python >=3.8
+    - numpy >=1.21,<2.0
 
 test:
   imports:
