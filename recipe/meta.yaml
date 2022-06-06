@@ -19,9 +19,9 @@ requirements:
     - pip
     - python >=3.8
   run:
-    - niondata >=0.14.0,<0.15.0
+    - niondata >=0.14.0,<0.16.0
     - nionswift >=0.16.0,<0.17.0
-    - nionui >=0.6.0,<0.7.0
+    - nionui >=0.6.3,<0.7.0
     - nionutils >=0.4.1,<0.5.0
     - python >=3.8
     - numpy >=1.21,<2.0
