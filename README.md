@@ -1,11 +1,11 @@
-About nionswift-instrumentation
-===============================
+About nionswift-instrumentation-feedstock
+=========================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/nionswift-instrumentation-feedstock/blob/main/LICENSE.txt)
 
 Home: https://nionswift-instrumentation.readthedocs.io
 
 Package license: GPL-3.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/nionswift-instrumentation-feedstock/blob/main/LICENSE.txt)
 
 Summary: A Nion Swift library for STEM instrumentation (Camera, Scan, Video, Microscope).
 
