@@ -1,13 +1,13 @@
 {% set name = "nionswift-instrumentation" %}
-{% set version = "22.1.1" %}
+{% set version = "23.1.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: cad9dd6b8552bce7d93b352fdaddc97614df08119c9c7b9d10a60ec2a98bc309
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 44bded6e17e7db6d3402b755bd874b180fa1aa782ab6dc92bb5642c91763b24a
 
 build:
   number: 0
