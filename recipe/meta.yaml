@@ -1,3 +1,4 @@
+{% set python_min = '3.11' %}
 {% set name = "nionswift-instrumentation" %}
 {% set version = "23.1.0" %}
 
@@ -6,18 +7,18 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
   sha256: 44bded6e17e7db6d3402b755bd874b180fa1aa782ab6dc92bb5642c91763b24a
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.11
+    - python {{ python_min }}
     - setuptools
   run:
     - niondata >=15.7,<16.0
@@ -25,9 +26,11 @@ requirements:
     - nionui >=8.0,<9.0
     - nionutils >=4.12,<5.0
     - numpy >=2.0,<3.0
-    - python >=3.11
+    - python >={{ python_min }}
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - nion.instrumentation
     - nion.instrumentation.test
