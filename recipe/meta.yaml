@@ -21,9 +21,9 @@ requirements:
     - python {{ python_min }}
     - setuptools
   run:
-    - niondata >=15.8,<16.0
-    - nionswift >=16.15,<17.0
-    - nionui >=10.0,<11.0
+    - niondata >=15.9,<16.0
+    - nionswift >=16.16,<17.0
+    - nionui >=10.2,<11.0
     - nionutils >=4.14,<5.0
     - numpy >=2.0,<3.0
     - python >={{ python_min }}
